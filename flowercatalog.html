@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Flower Catalog Website</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+
+<script type="text/javascript">
+	var appear = function(){
+	document.getElementById('image1').style.display="inline";
+	}
+	var disappear = function(){
+	document.getElementById('image1').style.display="none";
+	setTimeout('appear()',1000);
+	}
+</script>
+	<table>
+	<div id ="heading"><hr><h1>Flower Catalog</h1><hr></div>
+		<td>
+		<div id = "image">
+			<img src = "flower.jpg" border="1"></img>
+	</div>
+		</td>
+	<td>
+	<div id="link">
+		<ul>
+			<li><a href="http://abeliophyllum" id='786' target="_blank">abeliophyllum</a></li>
+			<li><a href="http://Agerratum" id='786' target="_blank">Agerratum</a></li>
+		</ul>
+	</div>
+	<div id = "image1">
+		<img src = "waterJar.jpg" onclick="disappear()"></img>
+	</div>
+	<div id="guest">
+		<ul>
+			<li><a href="http://guesttbook" id='786' target="_blank">Guest Book</a></li>
+		</ul>
+	</div>
+	</td>
+	</table>
+
+</body>
+</html>
